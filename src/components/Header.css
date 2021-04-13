@@ -1,0 +1,77 @@
+.header {
+  max-height: fit-content;
+  box-shadow: #101011 0px 0px 10px 10px inset;
+}
+.header > .overlay {
+  height: 100%;
+  padding: 6% 5%;
+  background: linear-gradient(
+    to right,
+    #101011,
+    #101011,
+    #101011d2,
+    #10101136 50%
+  );
+}
+
+.header .movie_title {
+  max-width: 400px;
+}
+.header .movie_info_container,
+.header .movie_discription {
+  max-width: 400px;
+  max-height: 25vw;
+  overflow: hidden;
+  padding: 1em 0;
+}
+
+.header .movie_info_container span {
+  margin-right: 1em;
+  font-size: 0.9em;
+  color: #cecece;
+}
+.header .movie_info_container .age {
+  padding: 0.1em 0.2em;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+}
+.header .movie_info_container .genres_list {
+  font-size: 1em;
+  color: #cecece;
+  margin-top: 1em;
+  word-spacing: 0.5em;
+}
+.header .movie_discription {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.header .primary_btn {
+  background: transparent;
+  padding: 0.4em 1em;
+  margin-top: 2em;
+  margin-right: 2em;
+  font-size: 1.05em;
+  color: #f2f2f2;
+  outline: none;
+  border: 2px solid #cecece;
+  border-radius: 20px;
+}
+.header .primary-btn:hover {
+  background: #cecece;
+  color: #101011;
+  cursor: pointer;
+}
+.header .primary_btn > * {
+  margin-right: 0.5em;
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .header > .overlay {
+    background: #10101196;
+  }
+}

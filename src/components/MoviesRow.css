@@ -1,0 +1,28 @@
+.movies_row {
+  padding: 0 2em;
+  margin-top: 2em;
+}
+.movies_row .title {
+  padding: 0 1em;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+}
+.movies_row .posters_container {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1em;
+}
+.movies_row .posters_container::-webkit-scrollbar {
+  display: none;
+}
+.movies_row .posters_container .poster {
+  object-fit: contain;
+  max-width: 150px;
+  margin-right: 1em;
+  transition: transform ease 0.15s;
+}
+
+.movies_row .posters_container .poster:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
