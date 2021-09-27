@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/youflix/static/css/main.513d5d87.chunk.css",
+    "main.js": "/youflix/static/js/main.8d8efc89.chunk.js",
+    "main.js.map": "/youflix/static/js/main.8d8efc89.chunk.js.map",
+    "runtime-main.js": "/youflix/static/js/runtime-main.aec575cf.js",
+    "runtime-main.js.map": "/youflix/static/js/runtime-main.aec575cf.js.map",
+    "static/js/2.9ad000b5.chunk.js": "/youflix/static/js/2.9ad000b5.chunk.js",
+    "static/js/2.9ad000b5.chunk.js.map": "/youflix/static/js/2.9ad000b5.chunk.js.map",
+    "index.html": "/youflix/index.html",
+    "static/css/main.513d5d87.chunk.css.map": "/youflix/static/css/main.513d5d87.chunk.css.map",
+    "static/js/2.9ad000b5.chunk.js.LICENSE.txt": "/youflix/static/js/2.9ad000b5.chunk.js.LICENSE.txt",
+    "static/media/logo.dc0a6385.png": "/youflix/static/media/logo.dc0a6385.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aec575cf.js",
+    "static/js/2.9ad000b5.chunk.js",
+    "static/css/main.513d5d87.chunk.css",
+    "static/js/main.8d8efc89.chunk.js"
+  ]
+}
