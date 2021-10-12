@@ -19,6 +19,7 @@
   object-fit: contain;
   max-width: 150px;
   margin-right: 1em;
+  margin-bottom: 1em;
   transition: transform ease 0.15s;
 }
 

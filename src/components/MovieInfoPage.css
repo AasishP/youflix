@@ -63,6 +63,9 @@
   margin: 2em 5%;
   padding: 0.6em 0.95em;
   border-radius: 10px;
+  background-color: transparent;
+  color: #f2f2f2;
+  outline: none;
 }
 .info_banner .btn > * {
   margin-right: 0.5em;
@@ -73,6 +76,7 @@
   background-color: #b8b4b4;
   cursor: pointer;
 }
+
 
 @media screen and (max-width: 768px) {
   .info_banner .overlay {
@@ -88,5 +92,8 @@
   .info_banner .title {
     margin-top: 1em;
     font-size: 1.8em;
+  }
+  .video_player {
+    width: 100vw !important;
   }
 }

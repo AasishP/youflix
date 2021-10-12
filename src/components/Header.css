@@ -50,14 +50,13 @@
   background: transparent;
   padding: 0.4em 1em;
   margin-top: 2em;
-  margin-right: 2em;
   font-size: 1.05em;
   color: #f2f2f2;
   outline: none;
   border: 2px solid #cecece;
   border-radius: 20px;
 }
-.header .primary-btn:hover {
+.header .primary_btn:hover {
   background: #cecece;
   color: #101011;
   cursor: pointer;

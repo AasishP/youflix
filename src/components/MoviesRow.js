@@ -21,6 +21,13 @@ function MoviesRow(props) {
       case "Trending":
         movies = (await tmdb.get("/trending/movie/day")).data.results;
         break;
+      case "Results":
+        movies = (
+          await tmdb.get("/search/movie", {
+            params: { query: props.query },
+          })
+        ).data.results;
+        break;
       default:
         movies = (
           await tmdb.get("/discover/movie", {
@@ -39,16 +46,27 @@ function MoviesRow(props) {
   }, [props.genre_id, props.title]);
 
   return (
-    <div className="movies_row">
+    <div className="movies_row" id={props.title}>
       <h1 className="title">{props.title}</h1>
-      <div className="posters_container">
+      <div
+        className="posters_container"
+        style={
+          (props.title === "Results" && {
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }) ||
+          (props.title !== "Results" && {})
+        }
+      >
         {movies.map((movie) => {
+          if (movie.poster_path == null) {
+            return "";
+          }
           return (
             <Link
               key={movie.id}
               to={{
-                pathname: `/MovieInfo`,
-                search: `?${movie.id}`,
+                pathname: `/youflix/MovieInfo/${movie.id}`,
               }}
             >
               <img

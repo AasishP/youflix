@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faVideo } from "@fortawesome/free-solid-svg-icons";
-import tmdb,{tmdbImageBaseUrl} from "../api/tmdb";
-import {getMovieGenres} from "../genres";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import tmdb, { tmdbImageBaseUrl } from "../api/tmdb";
+import { getMovieGenres } from "../genres";
+import { Link } from "react-router-dom";
 
 function Header() {
-
   const [movie, setMovie] = useState([]);
 
   async function getRandomMovie() {
@@ -49,13 +49,15 @@ function Header() {
           <div className="genres_list">{movie.genres_list}</div>
         </div>
         <p className="movie_discription">{movie.overview}</p>
-        <button className="primary_btn play_btn">
-          <FontAwesomeIcon icon={faPlay} color="#E50914" /> Play
-        </button>
-        <button className="primary_btn">
-          <FontAwesomeIcon icon={faVideo} color="#f2f2f2" />
-          Trailer
-        </button>
+        <Link
+          to={{
+            pathname: `/youflix/MovieInfo/${movie.id}`,
+          }}
+        >
+          <button className="primary_btn watch_now_btn">
+            <FontAwesomeIcon icon={faPlay} color="#f2f2f2" /> WatchNow
+          </button>
+        </Link>
       </div>
     </div>
   );
