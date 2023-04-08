@@ -11,15 +11,17 @@ function App() {
       <Router>
         <Nav />
         <Switch>
-          <Route exact path="/youflix" component={Home} />
-          <Route exact path="/youflix/movieinfo/:id" component={MovieInfoPage} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/movieinfo/:id" component={MovieInfoPage} />
           <Route path="/">
-            <h1 style={
-              {
-                textAlign:'center',
-                marginTop:'200px'
-              }
-            }>404! <br /> ERROR NOT FOUND!</h1>
+            <h1
+              style={{
+                textAlign: "center",
+                marginTop: "200px",
+              }}
+            >
+              404! <br /> ERROR NOT FOUND!
+            </h1>
           </Route>
         </Switch>
       </Router>
