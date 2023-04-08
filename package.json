@@ -2,6 +2,7 @@
   "name": "youflix",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -17,7 +18,6 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://aasishp.github.io/youflix",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
