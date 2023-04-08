@@ -66,7 +66,7 @@ function MoviesRow(props) {
             <Link
               key={movie.id}
               to={{
-                pathname: `/youflix/MovieInfo/${movie.id}`,
+                pathname: `/MovieInfo/${movie.id}`,
               }}
             >
               <img

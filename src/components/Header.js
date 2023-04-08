@@ -51,7 +51,7 @@ function Header() {
         <p className="movie_discription">{movie.overview}</p>
         <Link
           to={{
-            pathname: `/youflix/MovieInfo/${movie.id}`,
+            pathname: `/MovieInfo/${movie.id}`,
           }}
         >
           <button className="primary_btn watch_now_btn">

@@ -7,7 +7,7 @@ import logo from "../logo.png";
 function Nav() {
   return (
     <nav>
-      <Link to="/youflix">
+      <Link to="/">
         <img className="main_logo" src={logo} alt="logo" />
       </Link>
       <SearchBox />
